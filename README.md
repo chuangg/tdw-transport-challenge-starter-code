@@ -1,5 +1,5 @@
 ## Setting up the Environment
-To setup the environment you will need to install below packages to getting started
+To get started setup the required environments by following below steps
 
 ### Setting up TDW
 To setup TDW follow these steps
@@ -11,11 +11,11 @@ You can read more about setting up and using TDW at https://github.com/threedwor
 Install dependency:
 1. Install [Magnebot API](https://github.com/alters-mit/magnebot)
 2. Install [Transport Challenge API](https://github.com/alters-mit/transport_challenge)
-3. Install [Transport Challnge Gym API](https://us-south.git.cloud.ibm.com/Abhi.B/tdw-transport-challenge)
+3. Install [Transport Challnge Gym API](https://github.com/chuangg/tdw-transport-challenge)
 4. Download [Transport challenge data](https://agent-dataset-storage.s3.us-east.cloud-object-storage.appdomain.cloud/model_library.zip)
 ## Working with code
 ### Gym Scenes
-The dataset is modular in its design, comprising of several physical floor plan geometries with a wall and floor texture 
+The dataset is modular in its design, consisting of several physical floor plan geometries with a wall and floor texture 
 variations (e.g. parquet flooring, ceramic tile, stucco, carpet etc.) and various furniture and prop layouts (tables, 
 chairs, cabinets etc.), for a total of 15 separate environments. There are 10 kinds of scenes in training dataset and 
 5 kinds of scenes in testing. Every scene has 6 to 8 rooms, 8 objects, and some containers.
@@ -142,8 +142,15 @@ To prepare your agent for submission instantiate your agent in agent.py. This fi
 test your agent on testing scenes. Use docker build command 
 `docker build --no-cache -t tdwbase --build-arg TDW_VERSION=1.8.4 .` to create final submission image. You can follow
 the instructions on [EvalAI Challenge page](https://eval.ai/web/challenges/challenge-page/825/overview) for submission of the image. 
+To Make a submission:
+* Create account on `https://eval.ai/`
+* Find the challenge: Dashboard -> All Challenges, and look for TDW-Transport Challenge
+* Clickl on participation tab :
+    * Create a new team if you don't already have one
+    * Enter the competition
+* Then click on submit tab and follow steps to setup Evalai cli and submit the image
 ### Local Evaluation
-Before submitting the image makesure that the docker image works by evaluating locally. To do this use this docker run 
+Before submitting the image make sure that the docker image works by evaluating locally. To do this use this docker run 
 command
 ```shell script
 mkdir /tmp/output
