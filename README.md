@@ -12,7 +12,7 @@ Install dependency:
 1. Install [Magnebot API](https://github.com/alters-mit/magnebot)
 2. Install [Transport Challenge API](https://github.com/alters-mit/transport_challenge)
 3. Install [Transport Challnge Gym API](https://github.com/chuangg/tdw-transport-challenge)
-4. Download [Transport challenge data]()
+4. Download [Transport challenge data](https://agent-dataset-storage.s3.us-east.cloud-object-storage.appdomain.cloud/model_library.zip)
 ## Working with code
 ### Gym Scenes
 The dataset is modular in its design, consisting of several physical floor plan geometries with a wall and floor texture 
