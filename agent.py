@@ -9,7 +9,8 @@ import os
 def init_logs():
     logger = logging.getLogger('simple_example')
     logger.setLevel(logging.DEBUG)
-    fh = logging.FileHandler(os.path.join("/", "results", "output.log"))
+    os.makedirs("results", exist_ok=True)
+    fh = logging.FileHandler(os.path.join("results", "output.log"))
     fh.setLevel(logging.DEBUG)
     ch = logging.StreamHandler()
     ch.setLevel(logging.DEBUG)

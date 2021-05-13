@@ -56,7 +56,7 @@ dict {"type": 5}
     from agent import init_logs
     
     # Create gym environment. 
-    env = gym.make("transport_challenge-v0", train = 0, physics = True, port = 1071)
+    env = gym.make("transport_challenge-v0", train = 0, physics = True, port = 1071, launch_build=True)
     
     # Load training scenes
     with open(pkg_resources.resource_filename("tdw_transport_challenge", "train_dataset.pkl")) as fp:
@@ -96,7 +96,7 @@ dict {"type": 5}
   import random
   
   def create_env(port):
-    env = gym.make("transport_challenge-v0",train = 0, physics = True, port = port, launch_build_inside_docker=True)
+    env = gym.make("transport_challenge-v0",train = 0, physics = True, port = port, launch_build=True)
     env.reset()
     return env
   
