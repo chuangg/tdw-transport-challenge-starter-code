@@ -59,7 +59,7 @@ dict {"type": 5}
     env = gym.make("transport_challenge-v0", train = 0, physics = True, port = 1071, launch_build=True)
     
     # Load training scenes
-    with open(pkg_resources.resource_filename("tdw_transport_challenge", "train_dataset.pkl")) as fp:
+    with open(pkg_resources.resource_filename("tdw_transport_challenge", "train_dataset.pkl"), 'rb') as fp:
         dataset = pickle.load(fp)  
   
     # Load training scene. scene_number is from 0 - 100
