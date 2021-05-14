@@ -9,7 +9,7 @@ You can read more about setting up and using TDW at https://github.com/threedwor
    
 ### Setting TDW Transport challenge environment
 Install dependency:
-1. Install [Magnebot API](https://github.com/alters-mit/magnebot)
+1. Install [Magnebot API](https://github.com/alters-mit/magnebot) `pip3 install magnebot==1.1.2`
 2. Install [Transport Challenge API](https://github.com/alters-mit/transport_challenge)
 3. Install [Transport Challnge Gym API](https://github.com/chuangg/tdw-transport-challenge)
 4. Download [Transport challenge data](https://agent-dataset-storage.s3.us-east.cloud-object-storage.appdomain.cloud/model_library.zip)
