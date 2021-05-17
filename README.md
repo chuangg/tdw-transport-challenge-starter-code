@@ -12,7 +12,7 @@ Install dependency:
 1. Install [Magnebot API](https://github.com/alters-mit/magnebot) `pip3 install magnebot==1.1.2`
 2. Install [Transport Challenge API](https://github.com/alters-mit/transport_challenge)
 3. Install [Transport Challnge Gym API](https://github.com/chuangg/tdw-transport-challenge)
-4. Download [Transport challenge data](https://agent-dataset-storage.s3.us-east.cloud-object-storage.appdomain.cloud/model_library.zip)
+4. Download [Transport challenge data](https://tdw-transport-challenge-storage-bucket-au.s3.au-syd.cloud-object-storage.appdomain.cloud/model_library.zip)
 ## Working with code
 ### Gym Scenes
 The dataset is modular in its design, consisting of several physical floor plan geometries with a wall and floor texture 
@@ -254,3 +254,8 @@ Replace :4 with display server name created in previous step
 ```shell
 nvidia-docker run --network none --env="DISPLAY=:4" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --volume="/tmp/output:/results" -e NVIDIA_DRIVER_CAPABILITIES=all -e TRANSPORT_CHALLENGE=file:////model_library -e NUM_EVAL_EPISODES=1 -d submission_image sh run_baseline_agent.sh 7845
 ```
+### Terms and Conditions
+1. License Challenge Dataset: The dataset provided in this challenge are licensed under the MIT License (https://github.com/threedworld-mit/tdw/blob/master/LICENSE.txt) and are solely owned by Massachusetts Institute of Technology. International Business Machines Corporation only hosts this data. You accept full responsibility for your use of the datasets and shall defend and indemnify Massachusetts Institute of Technology and International Business Machines Corporation, including its employees, officers and agents, against any and all claims arising from your use of the datasets
+ 2. Massachusetts Institute of Technology and the International Business Machines Corporation make no representations or warranties regarding the datasets, including but not limited to warranties of non-infringement or fitness for a particular purpose.
+ 3. International Business Machines Corporation does not store or distribute any user information including username, email address, team name etc. and only uses email address and team name for updating leaderboard information. 
+ 4. User submission including user reinforcement learning policy is evaluated by International Business Machines Corporation on its own terms and evaluation result is reported to leaderboard. International Business Machines Corporation does not store or distribute user submission.
