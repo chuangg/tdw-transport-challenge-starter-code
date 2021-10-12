@@ -1,11 +1,5 @@
 ## Setting up the Environment
 To get started setup the required environments by following below steps
-
-### Setting up TDW
-To setup TDW follow these steps
-1. Download latest build for your platform from https://github.com/threedworld-mit/tdw/releases
-2. Install the TDW package by doing `pip install tdw`
-You can read more about setting up and using TDW at https://github.com/threedworld-mit/tdw/blob/master/Documentation/getting_started.md
    
 ### Setting TDW Transport Challenge environment
 
