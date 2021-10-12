@@ -7,12 +7,20 @@ To setup TDW follow these steps
 2. Install the TDW package by doing `pip install tdw`
 You can read more about setting up and using TDW at https://github.com/threedworld-mit/tdw/blob/master/Documentation/getting_started.md
    
-### Setting TDW Transport challenge environment
-Install dependency:
-1. Install [Magnebot API](https://github.com/alters-mit/magnebot) `pip3 install magnebot==1.1.2`
-2. Install [Transport Challenge API](https://github.com/alters-mit/transport_challenge)
-3. Install [Transport Challnge Gym API](https://github.com/chuangg/tdw-transport-challenge)
-4. Download [Transport challenge data](https://tdw-transport-challenge-storage-bucket-au.s3.au-syd.cloud-object-storage.appdomain.cloud/model_library.zip). By downloading this data you are agreeing to these [terms and conditions ](#terms-and-conditions)
+### Setting TDW Transport Challenge environment
+
+1. Install [Transport Challenge API and TDW build](https://github.com/alters-mit/transport_challenge)
+2. Install [Transport Challenge Gym API](https://github.com/chuangg/tdw-transport-challenge)
+3. Download [Transport Challenge data](https://tdw-transport-challenge-storage-bucket-au.s3.au-syd.cloud-object-storage.appdomain.cloud/model_library.zip). By downloading this data you are agreeing to these [terms and conditions ](#terms-and-conditions)
+
+If you install `transport_challenge` , it will automatically install `tdw` and `magnebot`. The `transport_challenge` repo has instructions for how to downgrade `magnebot` and `tdw` .
+
+There are currently two GitHub Issues. For both of them, tell them to do the following:
+1. `pip3 uninstall tdw`
+2. `pip3 uninstall magnebot`
+3. `pip3 uninstall ikpy`
+4. In the `transport_challenge` repo: `git pull` and then `pip3 install -e .`
+
 ## Working with code
 ### Gym Scenes
 The dataset is modular in its design, consisting of several physical floor plan geometries with a wall and floor texture 
