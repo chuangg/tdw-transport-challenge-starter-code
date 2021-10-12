@@ -9,12 +9,6 @@ To get started setup the required environments by following below steps
 
 If you install `transport_challenge` , it will automatically install `tdw` and `magnebot`. The `transport_challenge` repo has instructions for how to downgrade `magnebot` and `tdw` .
 
-There are currently two GitHub Issues. For both of them, tell them to do the following:
-1. `pip3 uninstall tdw`
-2. `pip3 uninstall magnebot`
-3. `pip3 uninstall ikpy`
-4. In the `transport_challenge` repo: `git pull` and then `pip3 install -e .`
-
 ## Working with code
 ### Gym Scenes
 The dataset is modular in its design, consisting of several physical floor plan geometries with a wall and floor texture 
