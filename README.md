@@ -52,7 +52,7 @@ dict {"type": 5}
     from agent import init_logs
     
     # Create gym environment. 
-    env = gym.make("transport_challenge-v0", train = 0, physics = True, port = 1071, launch_build=True)
+    env = gym.make("transport_challenge-v0", train = 0, physics = True, port = 1071, launch_build=False)
     
     # Load training scenes
     with open(pkg_resources.resource_filename("tdw_transport_challenge", "train_dataset.pkl"), 'rb') as fp:
@@ -83,6 +83,7 @@ dict {"type": 5}
     # Run the python file
     python test.py
     ```
+  If you set `launch_build=True` then build will automatically launch with your controller and running `./TDW/TDW.x86_64 -port 1071 &` separately is not required. 
     
 * To run multiple environments / vectorize environments you can use 
   [stable baselines](https://github.com/hill-a/stable-baselines). Here is an example:
