@@ -5,7 +5,7 @@ from tdw_transport_challenge.h_agent import H_agent
 from agent import init_logs
 
 # Create gym environment and load first training scene
-env = gym.make("transport_challenge-v0", train=0, physics=True, port=1071, launch_build=True)
+env = gym.make("transport_challenge-v0", train=0, physics=True, port=1071, launch_build=False)
 
 # Reset environment and change to next training scene
 env.reset()
