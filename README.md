@@ -60,7 +60,7 @@ dict {"type": 5}
   
     # Load training scene. scene_number is from 0 - 100
     scene_number = 0
-    obs, info = env.reset(dataset[scene_number])
+    obs, info = env.reset(scene_info=dataset[scene_number])
     
     # create logger
     logger = init_logs()
